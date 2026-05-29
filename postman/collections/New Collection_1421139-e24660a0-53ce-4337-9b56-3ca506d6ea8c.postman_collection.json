@@ -1,0 +1,151 @@
+{
+  "info": {
+    "_postman_id": "e24660a0-53ce-4337-9b56-3ca506d6ea8c",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "https://postman-echo.com/get",
+      "id": "19c73553-a003-4c93-a84f-cd234350fa58",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://postman-echo.com/get",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "1a9884d9-e78b-4771-a982-4bcf51d0c2fd",
+          "name": "https://postman-echo.com/get",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/get",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "get"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "date",
+              "value": "Thu, 28 May 2026 22:51:16 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"115-UIWPnCCDJODWxqCA3zeiJwPGvpA\""
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "x-envoy-upstream-service-time",
+              "value": "5"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "set-cookie",
+              "value": "sails.sid=s%3A0evoRHQCvDP5XQ-kAdJfAioEVApu-1br.wlGjF2wfQ%2BAi9vhij%2Fs0Xh4WziDtG5MPzuYhBJN0N3I; Path=/; HttpOnly"
+            },
+            {
+              "key": "set-cookie",
+              "value": "__cf_bm=ccdiC6We8TW8iEa4RmDCeL_zOxDbOkNeiNgiYcHFOr0-1780008675.9630551-1.0.1.1-H.zjp_gUzS4At0nStre3h3dT_cgtmaOQCRm0a6eQgvVzFyWcCVXS4W7pB9sQcHm7OWiMhrFTnFc0Uo4kuiH3GHF0xuN5Q.qqx7KHlZO0krNd6BzMtGzgy2AKtkneWS86; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com; Expires=Thu, 28 May 2026 23:21:16 GMT"
+            },
+            {
+              "key": "set-cookie",
+              "value": "_cfuvid=dNzIv.QBo69zSHTS3AdPOtBycbbpn.pQ9cuxInr5ljY-1780008675.9630551-1.0.1.1-0b4cfkWAjvQ_lib3t85lVtvTgWtZdoMWjDRfxu4nNJ8; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com"
+            },
+            {
+              "key": "content-encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "cf-ray",
+              "value": "a030d2b0cb9a1739-SJC"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"args\": {},\n    \"headers\": {\n        \"host\": \"postman-echo.com\",\n        \"user-agent\": \"PostmanRuntime/7.53.0\",\n        \"accept\": \"*/*\",\n        \"accept-encoding\": \"gzip, br\",\n        \"postman-token\": \"cab9f6a1-0835-48c2-8c6e-f541a44deec5\",\n        \"cache-control\": \"no-cache\",\n        \"x-forwarded-proto\": \"https\"\n    },\n    \"url\": \"https://postman-echo.com/get\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Hello Name API",
+      "id": "50bdb039-cc67-410a-bd9a-e9c77bd1a444",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Dennis\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://postman-echo.com/post",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "post"
+          ]
+        },
+        "description": "Accepts a name in the request body and responds with 'Hello {name}!!'"
+      },
+      "response": []
+    }
+  ]
+}
